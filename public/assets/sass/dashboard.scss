@@ -1,0 +1,91 @@
+@import 'partials/defaults';
+@import 'partials/general';
+
+body.dashboard{
+	font-size: 14px;
+	// HEADER
+	.top-head{
+		background: #2d2d2d;
+		height: 50px;
+		line-height: 50px; 
+		color: #fff;
+		// NEST
+		a{ color: #fff; }
+		.form-group{
+			margin-bottom: 0;
+			// NEST
+			.form-control{
+				border-radius: 0;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				height: 50px;
+				-webkit-box-shadow: none;
+    			box-shadow: none;
+    			border: none;
+    			background-color: rgba(255, 255, 255, .1)
+			}
+		}
+	}
+	// SIDEBAR
+	#sidebar{
+	    position: fixed;
+		background-color: #f8f9fa;
+		position: -webkit-sticky;
+	    position: sticky;
+	    top: 48px;
+	    height: calc(100vh - 48px);
+	    padding-top: .5rem;
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+	    // NEST
+	    h4{
+	    	text-transform: uppercase;
+	    	font-weight: bold;
+	    	border-bottom: 1px solid #ddd;
+	    	padding-bottom: 5px;
+	    }
+	    .list-unstyled{
+	    	margin-bottom: 30px;
+	    	// NEST
+	    	li{
+	    		// NEST
+	    		a{
+					color: #000;
+					font-size: 12px;
+					font-weight: bold;
+					// NEST
+					.feather {
+					    margin-right: 4px;
+					    color: #999;
+					}
+	    		}
+	    	}
+	    }
+	}
+
+	// CONTENT
+	#main-content{
+		// NEST
+		.card{
+			
+			// NEST
+			.card-header{
+				border-bottom: 1px solid #eee;
+				font-size: 32px;
+				font-weight: bold;
+				margin-bottom: 15px;
+			}
+			a{ text-decoration: underline; }
+			.form-control{
+				border-radius: 0;
+				height: 40px;
+				-webkit-box-shadow: none;
+    			box-shadow: none;
+    			border-color: #ddd;
+    			background-color: #f9f9f9;
+			}
+			textarea.form-control{ height: 150px; }
+		}
+	}
+}
